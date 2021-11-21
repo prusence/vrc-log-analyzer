@@ -8,7 +8,7 @@ fn main() {
   let args: Vec<String> = env::args().collect();
   let filename = &args[1];
 
-  // Regix
+  // Regex
   let re_joined_room = Regex::new(r"([0-9\.]+ [0-9:]+).+Joining or Creating Room: (.+)").unwrap();
   let re_player_joined = Regex::new(r"([0-9\.]+ [0-9:]+).+OnPlayerJoined (.+)").unwrap();
   let re_player_left = Regex::new(r"([0-9\.]+ [0-9:]+).+OnPlayerLeft (.+)").unwrap();
